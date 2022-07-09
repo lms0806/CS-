@@ -1,8 +1,7 @@
 GC = 가비지 컬렉터
 
 GC가 발생하는 영역은 오로지 힙 영역뿐
-<img src="[http://img.shields.io/badge/-Tech%20blog-black?style=flat-square&logo=github&link=https://vividswan.github.io](https://velog.velcdn.com/images%2Fjsj3282%2Fpost%2F19b9ebd5-971c-40a3-ae22-46a0d95e1675%2Fjava-runtime-data.png)"/>
-https://velog.velcdn.com/images%2Fjsj3282%2Fpost%2F19b9ebd5-971c-40a3-ae22-46a0d95e1675%2Fjava-runtime-data.png
+<img src="(https://velog.velcdn.com/images%2Fjsj3282%2Fpost%2F19b9ebd5-971c-40a3-ae22-46a0d95e1675%2Fjava-runtime-data.png)"/>
 클래스 로더 서브 시스템은 클래스나 인터페이스를 JVM으로 로딩하는 기능을 수행
 실행 엔진은 로딩된 클래스의 메서드에 포함되어 있는 모든 인스트럭션 정보를 실행
 자바의 메모리 영역은 'Heap 메모리'와 'Non-heap 메모리'로 나뉜다.
