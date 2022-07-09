@@ -12,10 +12,8 @@ Private
  - 외부에서 접근이 불가능
  - 같은 클래스 내에서만 접근이 가능
 
----
 | 한정자 | 클래스 내부 | 동일 패키지 | 하위 클래스 | 그 외의 영역|
 | Public | O | O | O | O |
 | Protected | O | O | O | |
 | Default | O | O |||
 | Private | O ||||
----
