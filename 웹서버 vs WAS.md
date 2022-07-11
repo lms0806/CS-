@@ -36,3 +36,26 @@ WAS 주요 기능
  - 프로그램 실행 환경 및 DB 접속 기능 제공
  - 여러 트랜잭션 관리 기능
  - 업무 처리하는 비즈니스 로직 수행
+
+### 둘을 구분하는 이유
+웹 서버가 필요한 이유
+ - 정적 컨텐츠만 처리하도록 기능 분배를 해서 서버 부담을 줄임
+
+WAS가 필요한 이유
+ - 요청에 맞는 데이터를 DB에서 가져와 비즈니스 로직에 맞게 그떄마다 결과를 만들고 제공하면 자원을 효율적으로 사용할 수 있음
+
+WAS로 웹 서버 역할을 다 처리할 수 있는데 안하는 이유
+ - WAS가 웹서버의 정적 컨텐츠 요청까지 처리하면, 부하가 커지고 동적 컨텐츠 처리가 지연되면서 속도가 느려짐
+
+### 가장 효율적인 방법
+![효율적인 방법](https://gmlwjd9405.github.io/images/web/web-service-architecture.png)
+ - 웹 서버를 WAS 앞에 두고, 필요한 WAS들을 웹서버에 플러그인 형태로 설정하면 효율적인 분산 처리가 가능함
+
+순서
+ - 클라이언트의 요청을 웹 서버가 먼저 받은 다음, WAS에 보내 관련도니 Servlet을 메모리에 올림
+ - WAS는 web.xml을 참조해 해당 Servlet에 대한 스레드 생성
+ - 이때 HttpServletRequest와 HttpServletResponse 객체를 생성해 Servlet에게 전달
+ - doGet()이나 doPost()메소드는 인자에 맞게 생성된 적절한 동적 페이지를 Response 객체에 담아 WAS에 전달
+ - WAS는 Response 객체를 HttpResponse 형태로 바꿔 웹 서버로 전달
+ - 생성된 스레드를 종료하고, HttpServletRequest와 HttpServletResponse 객체 제거
+
