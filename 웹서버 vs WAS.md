@@ -1,4 +1,4 @@
-### Web Server VS Web Application Server
+# Web Server VS Web Application Server
 
 정적 페이지 vs 동적 페이지
 
@@ -13,7 +13,7 @@
  - 개발자는 Sevlet에 doGet() 메소드를 구현함
 
 ![was vs web server](https://gmlwjd9405.github.io/images/web/webserver-vs-was1.png)
-# 웹 서버
+### 웹 서버
  - 하드웨어와 소프트웨어로 구분됨
    - 하드웨어 : Web 서버가 설치된 컴퓨터
    - 소프트웨어 : 웹 브라우저 클라이언트로부터 HTTP 요청을 받고, 정적인 컨텐츠를 제공하는 프로그램
