@@ -32,7 +32,7 @@
    - URI는 자원을 표현하는데 중점을 두어야함
  - 자원에 대한 행위는 HTTP Method(GET, POST, PUT, DELETE)로 표현함
 HTTP METHOD의 알맞은 역할
------------
+
 | Method | 역할 |
 | :---: | :---: |
 | POST | POST를 통해 해당 URI를 요청하면 리소스를 생성함 |
