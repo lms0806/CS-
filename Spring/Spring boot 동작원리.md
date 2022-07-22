@@ -65,3 +65,5 @@
      - MessageConverter(@ResponseBody)가 작동
      - 메시지 컴버터는 오브젝트를 리턴할 때 json 타입으로 리턴함
 ![작동 순서](https://www.saichoiblog.com/wp-content/uploads/2021/11/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7-2021-11-26-%EC%98%A4%ED%9B%84-2.24.57-768x373.png)
+
+※출처 : https://www.saichoiblog.com
