@@ -31,3 +31,5 @@
 
 ### JPA는 OOP의 관점에서 모델링을 할 수 있게 해줌
 ![obejct -> db, extends](https://www.saichoiblog.com/wp-content/uploads/2021/11/OOP-modeling.jpg)
+
+※출처 : https://www.saichoiblog.com
